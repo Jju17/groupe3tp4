@@ -14,7 +14,6 @@ let contacts = [
     [4, "nom4", "prenom4", "0498372643", false, [0, 5, 6]],
     [5, "nom5", "prenom5", "0473625384", false, [3, 4]],
     [6, "nom6", "prenom6", "0487545764", true, [0, 1, 6]],
-    [7, "nom7", "prenom7", "0487545764", true, [1, 4]]
 ];
 
 function rajouterUnePersonne() {
