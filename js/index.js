@@ -5,25 +5,25 @@
 *
 */
 
-// [id, nom, prenom, gsm, isPositif, [idPersonneAContacter1, idPersonneAContacter2, ...]]
+
+// [gsm, nom, prenom, isPositif, [gsm1, gsm2, ...]]
 let contacts = [
-    [0, "nom0", "prenom0", "0478567453", false, [1]],
-    [1, "nom1", "prenom1", "0479506841", true, [2, 3, 5]],
-    [2, "nom2", "prenom2", "0473847463", false, [0]],
-    [3, "nom3", "prenom3", "0478354673", true, []],
-    [4, "nom4", "prenom4", "0498372643", false, [0, 5, 6]],
-    [5, "nom5", "prenom5", "0473625384", false, [3, 4]],
-    [6, "nom6", "prenom6", "0487545764", true, [0, 1, 6]],
+    ["0478567453", "nom0", "prenom0",false, ["0479506841", "0488679654"]],
+    ["0479506841", "nom1", "prenom1",true, ["0473847463", "0498372643"]],
+    ["0473847463", "nom2", "prenom2",false, ["0478354673", "0498372643"]],
+    ["0478354673", "nom3", "prenom3",true, ["0498372643", "0487545765"]],
+    ["0498372643", "nom4", "prenom4",false, ["0473625384", "0488679659"]],
+    ["0473625384", "nom5", "prenom5",false, ["0487545764", "0488679658"]],
+    ["0487545764", "nom6", "prenom6",true, ["0487545765", "0488679657"]],
+    ["0487545765", "nom7", "prenom7",true, ["0478567453", "0488679656"]]
 ];
 
 function rajouterUnePersonne() {
-    let nom = prompt();
-    let prenom = prompt();
-    let gsm = prompt();
+    let nom = prompt("veuillez introduire le nom du patient");
+    let prenom = prompt("veuillez introduire le prénom du patient");
+    let gsm = prompt("veuillez introduire le numéro de téléphone du patient");
     let isPositif = confirm('Cette personne était-elle positive récemment ?');
-    let idPersons = [];
-
-}
+    let listGsm = [];
 
 
 
