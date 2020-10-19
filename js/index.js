@@ -34,10 +34,10 @@ function randomBool() {
 
 function contactSiPositif() {
     for(let i=0; i < contacts.length; i++) {
-        if(contacts[i][4] === true) {
-            if(contacts[i][5].length > 0) {
+        if(contacts[i][3] === true) {
+            if(contacts[i][4].length > 0) {
                 console.log(`La personne (nom : ${contacts[i][1]}, prenom : ${contacts[i][2]}) est positif au covid, veuillez contacter :`);
-                aContacter(contacts[i][5]);
+                aContacter(contacts[i][4]);
             } else {
                 console.log(`La personne (nom : ${contacts[i][1]}, prenom : ${contacts[i][2]}) est positif au covid mais personne n'est affiché dans son tracing, veuillez vérifier auprès de la personne directement : ${contacts[i][3]}`);
             }
