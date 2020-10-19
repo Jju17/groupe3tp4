@@ -57,7 +57,7 @@ function aContacter(idPersonnesAContacter) {
     for(let i=0; i < idPersonnesAContacter.length; i++) {
         for(let j=0; j < contacts.length; j++) {
             if(idPersonnesAContacter[i] === contacts[j][0]) {
-                console.log(`${contacts[j][2]} ${contacts[j][1]} au numéro : ${contacts[j][3]}, `);
+                console.log(`${contacts[j][2]} ${contacts[j][1]} au numéro : ${contacts[j][0]}, `);
                 contacts[j][4] == true;
             }
         }
