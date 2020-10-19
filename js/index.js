@@ -30,7 +30,7 @@ function rajouterUnePersonne() {
         nombreContact ++;
         }
     contacts[contacts.length]=[gsm, nom, prenom, isPositif,idPersons];
-
+guyguguligilg
 
 
 function randomBool() {
