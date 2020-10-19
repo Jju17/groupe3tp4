@@ -26,12 +26,12 @@ function rajouterUnePersonne() {
     let listGsm = [];
     let nombreContact=0;
     for (let gsmPersonneAContacter=prompt("Indiquez un par un le numéro des personnes que vous avez cotoyé. Une fois terminé indiquez fin."); gsmPersonneAContacter !== "Fin" && gsmPersonneAContacter !== "fin" ; gsmPersonneAContacter=prompt("Indiquez un par un le numéro des personnes que vous avez cotoyé. Une fois terminé indiquez fin.")){
-        idPersons[nombreContact]=gsmPersonneAContacter;
+        listGsm[nombreContact]=gsmPersonneAContacter;
         nombreContact ++;
         }
-    contacts[contacts.length]=[gsm, nom, prenom, isPositif,idPersons];
+    contacts[contacts.length]=[gsm, nom, prenom, isPositif,listGsm];
 
-
+}
 
 function randomBool() {
     return Math.random() >= 0.5;
