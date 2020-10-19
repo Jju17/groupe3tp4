@@ -24,6 +24,12 @@ function rajouterUnePersonne() {
     let gsm = prompt("veuillez introduire le numéro de téléphone du patient");
     let isPositif = confirm('Cette personne était-elle positive récemment ?');
     let listGsm = [];
+    let nombreContact=0;
+    for (let gsmPersonneAContacter=prompt("Indiquez un par un le numéro des personnes que vous avez cotoyé. Une fois terminé indiquez fin."); gsmPersonneAContacter !== "Fin" && gsmPersonneAContacter !== "fin" ; gsmPersonneAContacter=prompt("Indiquez un par un le numéro des personnes que vous avez cotoyé. Une fois terminé indiquez fin.")){
+        idPersons[nombreContact]=gsmPersonneAContacter;
+        nombreContact ++;
+        }
+    contacts[contacts.length]=[gsm, nom, prenom, isPositif,idPersons];
 
 
 
