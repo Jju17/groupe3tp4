@@ -56,6 +56,10 @@ function aContacter(idPersonnesAContacter) {
                 console.log(`${contacts[j][2]} ${contacts[j][1]} au numéro : ${contacts[j][0]} `);
                 contacts[j][4] == true;
             }
+            else {
+				console.log ("Numéro "+idPersonnesAContacter[i] + " ,Merci d'ajouter cette personne à la liste des patients");
+				
+			}
         }
     }
 }
